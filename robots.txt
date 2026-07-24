@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://posterwords.app/sitemap.xml
+Sitemap: https://posterwords.pages.dev/sitemap.xml

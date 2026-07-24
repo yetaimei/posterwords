@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PosterWords — Learn Mandarin Chinese Through Beautiful Poster Cards</title>
+    <meta name="description" content="PosterWords turns learning Chinese into collecting beautifully designed poster cards. Describe any scene, and AI creates a complete Mandarin lesson with words, phrases, sentences, pinyin & audio.">
+    <meta name="keywords" content="learn Chinese, learn Mandarin, Chinese vocabulary app, HSK study, pinyin, Chinese flashcards, AI language learning, Chinese characters, hanzi, spaced repetition, poster cards, scene-based learning">
+    <link rel="canonical" href="https://posterwords.app/">
+
+    <!-- Apple Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6771689623">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://posterwords.app/">
+    <meta property="og:title" content="PosterWords — Learn Mandarin Chinese Through Beautiful Poster Cards">
+    <meta property="og:description" content="Describe any scene, AI creates your Chinese lesson. Words, phrases & sentences with pinyin, audio & smart flashcard review.">
+    <meta property="og:image" content="https://posterwords.app/images/og-cover.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PosterWords — Learn Mandarin Chinese Through Poster Cards">
+    <meta name="twitter:description" content="AI-powered scene-based Chinese learning with beautiful poster-style flashcards.">
+    <meta name="twitter:image" content="https://posterwords.app/images/og-cover.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://posterwords.app/">
+    <link rel="alternate" hreflang="zh" href="https://posterwords.app/zh/">
+    <link rel="alternate" hreflang="x-default" href="https://posterwords.app/">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PosterWords",
+        "alternateName": "PosterWords - 场景中文卡片",
+        "description": "PosterWords turns learning Chinese into collecting beautifully designed poster cards. AI generates scene-based vocabulary with pinyin, audio, and spaced repetition review.",
+        "applicationCategory": "EducationApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "1"
+        },
+        "screenshot": "https://posterwords.app/images/screenshot-hero.png",
+        "featureList": "AI Scene Generation, HSK 1-9 Levels, Poster-Style Cards, Smart Spaced Review, Daily Streak, Hanzi Stroke Writing, Native Audio, Tone-Accurate Pinyin",
+        "inLanguage": ["en", "zh-Hans", "zh-Hant", "ja", "ko", "fr", "de", "es", "pt", "ru", "it", "nl", "sv", "ar", "th", "vi", "id", "ms", "tr"]
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is PosterWords?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "PosterWords is an iOS app that turns learning Mandarin Chinese into collecting beautifully designed poster cards. Instead of grinding random vocabulary lists, you describe a real-life scene and AI generates a complete learning bundle with words, phrases, and sentences — all with tone-marked pinyin, native audio, and smart review."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does PosterWords work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Describe any scene or situation (like 'ordering at a Sichuan restaurant' or 'checking in at the airport'), and PosterWords AI generates 5 contextual words, 4 practical phrases, and 3 complete sentences with accurate tone-marked pinyin and natural translations. Learn through poster-style cards and review on a smart spaced repetition schedule."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is PosterWords free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "PosterWords is free to download with basic features. PosterWords Pro subscription unlocks unlimited AI scene generation and full access to all learning features."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What HSK levels does PosterWords support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "PosterWords supports all HSK levels from HSK 1 to HSK 9 (the new HSK 3.0 standard). Set your target level and the AI tailors vocabulary difficulty — from absolute beginner to near-native fluency."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I practice Chinese character writing in PosterWords?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! PosterWords includes Hanzi stroke writing practice where you can trace characters stroke by stroke with guided, animated writing demonstrations."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a href="/" class="nav-brand" aria-label="PosterWords home">
+                <img src="images/app-icon-1024.png" alt="PosterWords logo" width="36" height="36" class="nav-logo">
+                <span class="nav-name">PosterWords</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#faq">FAQ</a>
+                <a href="#download" class="btn btn-sm">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>Learn Mandarin Chinese Through the Scenes You Love</h1>
+                <p class="hero-subtitle">PosterWords turns learning Chinese into collecting beautifully designed poster cards. Describe any scene — AI creates a complete lesson with words, phrases, pinyin & native audio.</p>
+                <div class="hero-cta">
+                    <a href="https://apps.apple.com/app/posterwords-learn-mandarin/id6771689623" class="btn btn-primary" aria-label="Download PosterWords on the App Store">
+                        <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor" aria-hidden="true"><path d="M15.87 12.35c-.03-2.87 2.34-4.24 2.44-4.3-1.33-1.95-3.4-2.21-4.14-2.24-1.76-.18-3.43 1.04-4.32 1.04-.89 0-2.27-1.01-3.73-.98-1.92.03-3.69 1.12-4.68 2.84-2 3.46-.51 8.59 1.43 11.4.95 1.38 2.08 2.92 3.57 2.86 1.43-.06 1.97-.93 3.7-.93 1.73 0 2.22.93 3.73.9 1.54-.03 2.52-1.4 3.46-2.79 1.09-1.6 1.54-3.14 1.57-3.22-.03-.01-3.01-1.16-3.03-4.58z"/><path d="M13.05 3.85c.79-.96 1.32-2.29 1.17-3.62-1.13.05-2.5.75-3.31 1.71-.73.84-1.37 2.19-1.2 3.48 1.26.1 2.55-.64 3.34-1.57z"/></svg>
+                        Download on the App Store
+                    </a>
+                </div>
+                <p class="hero-meta">Free download · iOS 17+ · iPhone & iPad</p>
+            </div>
+            <div class="hero-visual">
+                <img src="images/hero-mockup.png" alt="PosterWords app showing a Chinese learning poster card for ordering at a Sichuan restaurant" width="300" loading="eager">
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-items">
+                <div class="proof-item">
+                    <span class="proof-number">HSK 1–9</span>
+                    <span class="proof-label">All levels supported</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-number">19</span>
+                    <span class="proof-label">Languages available</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-number">AI</span>
+                    <span class="proof-label">Scene generation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How PosterWords Works</h2>
+            <p class="section-subtitle">Three steps from any scene to a complete Chinese lesson</p>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Describe a Scene</h3>
+                    <p>Type any real-life situation — "ordering at a hot pot restaurant," "buying train tickets," "discussing a movie." Your interests become your curriculum.</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>AI Generates Your Lesson</h3>
+                    <p>PosterWords AI creates 5 contextual words, 4 practical phrases, and 3 complete sentences — all with tone-marked pinyin and natural translations.</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Learn & Review</h3>
+                    <p>Study beautiful poster-style cards, hear native pronunciation, practice stroke writing, and review on a smart spaced repetition schedule.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section-alt" id="features">
+        <div class="container">
+            <h2 class="section-title">Features That Make Learning Chinese Beautiful</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🎨</div>
+                    <h3>Poster-Style Cards</h3>
+                    <p>A paper-white, character-first design that feels like collecting postcards, not filling in a spreadsheet. Every card is a work of art.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🤖</div>
+                    <h3>AI Scene Generation</h3>
+                    <p>Turn any situation you care about into a coherent, ready-to-use Chinese lesson with contextual vocabulary organized into words, phrases, and sentences.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">📊</div>
+                    <h3>HSK 1–9 Levels</h3>
+                    <p>Set your target level across the new HSK 3.0 standard. AI tailors every bundle's vocabulary — from your first words to near-native fluency.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🧠</div>
+                    <h3>Smart Spaced Review</h3>
+                    <p>Built-in memory system brings each word back before you forget it. Words you know appear less; words you miss return sooner.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">✍️</div>
+                    <h3>Hanzi Stroke Writing</h3>
+                    <p>Practice Chinese characters stroke by stroke with guided, animated writing. Build muscle memory for every character you learn.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🔊</div>
+                    <h3>Native Audio & Pinyin</h3>
+                    <p>Tap any word, phrase, or sentence to hear natural Chinese pronunciation. Every character comes with tone-marked pinyin for accuracy.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🔥</div>
+                    <h3>Daily Streak & Calendar</h3>
+                    <p>Build a chain of ink seals for every day you study. Streak protection means a single missed day won't wipe out your progress.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">📚</div>
+                    <h3>Themed Bookmark Library</h3>
+                    <p>Save cards by scenario and browse your collection in a visual library. Revisit any scene whenever you need a refresher.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="section" id="screenshots">
+        <div class="container">
+            <h2 class="section-title">See PosterWords in Action</h2>
+            <p class="section-subtitle">Beautiful poster-style cards that make learning Chinese a visual joy</p>
+            <div class="screenshots-scroll">
+                <img src="images/hero-mockup.png" alt="PosterWords hero - AI scene generation interface" width="280" loading="lazy">
+                <img src="images/screenshot-pinyin.png" alt="PosterWords pinyin and tone learning card" width="280" loading="lazy">
+                <img src="images/screenshot-writing.png" alt="PosterWords Chinese character stroke writing practice" width="280" loading="lazy">
+                <img src="images/screenshot-hsk.png" alt="PosterWords HSK level selection from HSK 1 to HSK 9" width="280" loading="lazy">
+                <img src="images/screenshot-cards.png" alt="PosterWords poster-style vocabulary cards collection" width="280" loading="lazy">
+                <img src="images/screenshot-review.png" alt="PosterWords smart spaced repetition review system" width="280" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- iOS Integration -->
+    <section class="section" id="ios">
+        <div class="container">
+            <h2 class="section-title">Built for iOS</h2>
+            <p class="section-subtitle">PosterWords feels right at home on your iPhone and iPad</p>
+            <div class="ios-features">
+                <div class="ios-item">
+                    <h3>Siri & Shortcuts</h3>
+                    <p>"Start review in PosterWords" — begin your daily practice hands-free.</p>
+                </div>
+                <div class="ios-item">
+                    <h3>Widgets</h3>
+                    <p>Home Screen and Lock Screen widgets keep your streak and progress visible at a glance.</p>
+                </div>
+                <div class="ios-item">
+                    <h3>iCloud Sync</h3>
+                    <p>Your cards, progress, and streaks sync seamlessly across all your Apple devices.</p>
+                </div>
+                <div class="ios-item">
+                    <h3>Spotlight</h3>
+                    <p>Check your streak or search your cards directly from Spotlight search.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial / Use Cases -->
+    <section class="section section-alt" id="use-cases">
+        <div class="container">
+            <h2 class="section-title">Learn Chinese Your Way</h2>
+            <p class="section-subtitle">PosterWords adapts to your life, interests, and goals</p>
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <h3>Travel</h3>
+                    <p>"Checking in at Beijing airport" "Ordering dumplings at a night market" "Asking for directions in Shanghai"</p>
+                </div>
+                <div class="use-case">
+                    <h3>Work</h3>
+                    <p>"Business meeting introductions" "Emailing a Chinese colleague" "Negotiating a contract"</p>
+                </div>
+                <div class="use-case">
+                    <h3>Daily Life</h3>
+                    <p>"Grocery shopping" "Taking a taxi" "Chatting with neighbors" "Going to the doctor"</p>
+                </div>
+                <div class="use-case">
+                    <h3>Culture</h3>
+                    <p>"Discussing a Chinese film" "Tea ceremony vocabulary" "Chinese New Year traditions"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>What is PosterWords?</summary>
+                    <p>PosterWords is an iOS app that turns learning Mandarin Chinese into collecting beautifully designed poster cards. Instead of grinding random vocabulary lists, you describe a real-life scene and AI generates a complete learning bundle with words, phrases, and sentences — all with tone-marked pinyin, native audio, and smart review.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How does the AI scene generation work?</summary>
+                    <p>Simply describe any scene or situation in English (or your native language). PosterWords' AI instantly generates 5 contextual words, 4 practical phrases, and 3 complete sentences — all tailored to your chosen HSK level with accurate tone-marked pinyin and natural translations.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is PosterWords free to use?</summary>
+                    <p>PosterWords is free to download with basic features. PosterWords Pro subscription unlocks unlimited AI scene generation and full access to all learning features. Your subscription supports ongoing development.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What HSK levels are supported?</summary>
+                    <p>PosterWords supports all levels from HSK 1 to HSK 9 under the new HSK 3.0 standard. Whether you're a complete beginner or preparing for advanced proficiency, the AI adapts vocabulary difficulty to your target level.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I practice writing Chinese characters?</summary>
+                    <p>Yes! PosterWords includes Hanzi stroke writing practice where you trace characters stroke by stroke with guided, animated demonstrations. Build muscle memory alongside your vocabulary knowledge.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Does PosterWords work offline?</summary>
+                    <p>Cards you've already generated are available offline for review. AI scene generation requires an internet connection. Your progress syncs via iCloud when you're back online.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What devices does PosterWords support?</summary>
+                    <p>PosterWords is available on iPhone and iPad running iOS 17 or later. Your progress syncs across all your Apple devices via iCloud.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section" id="download">
+        <div class="container cta-inner">
+            <h2>Start Learning Chinese Today</h2>
+            <p>Download PosterWords and turn any scene into a beautiful Chinese lesson.</p>
+            <a href="https://apps.apple.com/app/posterwords-learn-mandarin/id6771689623" class="btn btn-primary btn-lg" aria-label="Download PosterWords on the App Store">
+                <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor" aria-hidden="true"><path d="M15.87 12.35c-.03-2.87 2.34-4.24 2.44-4.3-1.33-1.95-3.4-2.21-4.14-2.24-1.76-.18-3.43 1.04-4.32 1.04-.89 0-2.27-1.01-3.73-.98-1.92.03-3.69 1.12-4.68 2.84-2 3.46-.51 8.59 1.43 11.4.95 1.38 2.08 2.92 3.57 2.86 1.43-.06 1.97-.93 3.7-.93 1.73 0 2.22.93 3.73.9 1.54-.03 2.52-1.4 3.46-2.79 1.09-1.6 1.54-3.14 1.57-3.22-.03-.01-3.01-1.16-3.03-4.58z"/><path d="M13.05 3.85c.79-.96 1.32-2.29 1.17-3.62-1.13.05-2.5.75-3.31 1.71-.73.84-1.37 2.19-1.2 3.48 1.26.1 2.55-.64 3.34-1.57z"/></svg>
+                Download on the App Store
+            </a>
+            <p class="cta-meta">Free · iOS 17+ · iPhone & iPad</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="images/app-icon-1024.png" alt="PosterWords" width="28" height="28">
+                <span>PosterWords</span>
+            </div>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="https://www.notion.so/leilei0091/POSTERWORDS-Privacy-Policy-3675e372803f8060a601e1eb5b0bde9c" rel="noopener">Privacy Policy</a>
+                <a href="https://www.notion.so/leilei0091/Terms-of-Service-PosterWords-3675e372803f80aea1e9dfb97a0aba72" rel="noopener">Terms of Service</a>
+                <a href="mailto:support@posterwords.app">Contact</a>
+            </nav>
+            <p class="footer-copy">&copy; 2025 PosterWords. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

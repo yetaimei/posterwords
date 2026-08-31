@@ -10,7 +10,7 @@
     --color-border: #e7e5e4;
     --color-hero-bg: #fef2f2;
     --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-    --font-serif: 'Noto Serif SC', Georgia, serif;
+    --font-serif: ui-serif, Georgia, serif;
     --radius: 12px;
     --radius-lg: 20px;
     --shadow-sm: 0 1px 3px rgba(0,0,0,.06);

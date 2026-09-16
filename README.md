@@ -1,6 +1,6 @@
 # PosterWords — Learn Mandarin Chinese Through Beautiful Poster Cards
 
-[![Download on the App Store](https://img.shields.io/badge/Download-App%20Store-blue?style=for-the-badge&logo=apple)](https://apps.apple.com/app/posterwords-learn-mandarin/id6771689623)
+[![Download on the App Store](https://img.shields.io/badge/Download-App%20Store-blue?style=for-the-badge&logo=apple)](https://apps.apple.com/app/apple-store/id6771689623?pt=127717725&ct=home-page&mt=8)
 
 **PosterWords** turns learning Chinese into collecting beautifully designed poster cards. Describe any real-life scene, and AI instantly generates a complete learning bundle — words, phrases, and sentences with tone-marked pinyin, native audio, and smart spaced repetition review.
 
@@ -23,7 +23,7 @@
 
 ## Links
 
-- 📱 [App Store](https://apps.apple.com/app/posterwords-learn-mandarin/id6771689623)
+- 📱 [App Store](https://apps.apple.com/app/apple-store/id6771689623?pt=127717725&ct=home-page&mt=8)
 - 🌐 [Website](https://posterwords.pages.dev/)
 - 📜 [Privacy Policy](https://www.notion.so/leilei0091/POSTERWORDS-Privacy-Policy-3675e372803f8060a601e1eb5b0bde9c)
 - 📋 [Terms of Service](https://www.notion.so/leilei0091/Terms-of-Service-PosterWords-3675e372803f80aea1e9dfb97a0aba72)
